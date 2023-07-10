@@ -1,0 +1,59 @@
+.newsletter{
+  margin-top: 30px;
+  background-color: #01213a;
+  padding: 50px 0px 70px 0px;
+  font-family: Moderat;
+  
+}
+
+.newsletter-box{
+  width: 50%;
+}
+
+.newsletter .form-vertical{
+  background: #fff;
+  border-radius: 50px;
+}
+
+.newsletter .section-block__title{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 40px;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+
+.newsletter .section-block__title, .newsletter .section-block__subtext{
+  color: #fff;
+}
+
+.subscribe-2{
+  border-radius: 50px;
+  width: 50%;
+  line-height: 45px;
+  background: #fff;
+  border: 0px #fff;
+}
+
+.subscribe-3{
+  line-height: 45px;
+  margin-left: -5px;
+  padding-right: 30px;
+  border: 0px #fff;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  background: #fff;
+}
+
+.subscribe-1{
+  margin-top: 40px;
+}
+
+.subscribe-1 > input:focus {
+  outline: none;
+}
+
+.subscribe-1 > input {
+  text-indent: 25px;
+}

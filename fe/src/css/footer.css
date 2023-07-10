@@ -1,0 +1,238 @@
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.footer-section {
+  background: #01213a;
+  position: relative;
+  margin-top: 20px;
+}
+
+.footer-cta {
+  border-bottom: 1px solid #373636;
+}
+
+.single-cta i {
+  color: #64a4e4;
+  font-size: 30px;
+  float: left;
+  
+}
+
+.cta-text {
+  padding-left: 15px;
+  display: inline-block;
+}
+
+.cta-text h4 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.cta-text span {
+  color: #a3a3a3;
+  font-size: 13px;
+}
+
+.cta-text span a{
+  color: #a3a3a3;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+@media (min-width: 740px) and (max-width: 1023px){
+  .single-cta > .cta-text span{
+    font-size: 8px;
+  }
+}
+
+@media (min-width: 740px){
+  .single-cta{
+    margin-top: 5px;
+  }
+  .single-cta i{
+    align-items: center;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 1000px){
+  .single-cta{
+    padding-bottom: 10px;
+    
+  }
+}
+
+.footer-content {
+  position: relative;
+  z-index: 2;
+}
+
+.footer-pattern img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 330px;
+  background-size: cover;
+  background-position: 100% 100%;
+}
+
+.footer-logo {
+  margin-bottom: 30px;
+}
+
+.footer-logo img {
+    max-width: 100px;
+}
+
+.footer-text p {
+  margin-bottom: 14px;
+  font-size: 14px;
+      color: #a3a3a3;
+  line-height: 28px;
+}
+
+.footer-social-icon span {
+  color: #fff;
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  /* margin-bottom: 20px; */
+}
+
+.footer-social-icon{
+  margin-bottom: 10px;
+}
+
+.footer-social-icon a {
+  color: #fff;
+  font-size: 30px;
+  margin-right: 20px;
+}
+
+.footer-social-icon i {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+}
+
+.IconFacebook{
+  color: #0039e6;
+}
+
+.IconFacebook:hover{
+  color: #fff;
+}
+
+.IconTwitter{
+  color: #3385ff;
+}
+
+.IconTwitter:hover{
+  color: #fff;
+}
+
+.IconGoogle{
+  color: #ff3333;
+}
+
+.IconGoogle:hover{
+  color: #fff;
+}
+
+.footer-widget-heading h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.footer-widget-heading h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  height: 2px;
+  width: 50px;
+  background: #64a4e4;
+}
+
+.footer-widget ul li {
+  display: block;
+  width: 50%;
+  margin-bottom: 12px;
+  float: left;
+}
+
+.footer-widget ul li a:hover{
+  color: #64a4e4;
+}
+
+.footer-widget ul li a {
+  color: #a3a3a3;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+.subscribe-form {
+  position: relative;
+  overflow: hidden;
+}
+
+.subscribe-form input {
+  width: 100%;
+  padding: 13px 28px;
+  background: #2E2E2E;
+  border: 1px solid #2E2E2E;
+  color: #fff;
+}
+
+.subscribe-form button {
+    position: absolute;
+    right: 0;
+    background: #64a4e4;
+    padding: 13px 15px;
+    border: 1px solid #64a4e4;
+    top: 0;
+}
+
+.subscribe-form button i {
+  color: #fff;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.copyright-area{
+  background: #202020;
+  padding: 5px 0;
+}
+
+.copyright-text p {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #a3a3a3;
+}
+
+.copyright-text p a{
+  color: #3c6185;
+}
+
+.footer-menu li {
+  display: inline-block;
+  margin-left: 60px;
+  margin-top: 15px;
+}
+
+.footer-menu li:hover a{
+  color: #3c6185;
+}
+
+.footer-menu li a {
+  font-size: 14px;
+  color: #a3a3a3;
+  text-decoration: none;
+}

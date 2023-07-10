@@ -1,0 +1,104 @@
+
+.row {
+  --bs-gutter-x: 0rem !important;
+}
+/* Modal styles */
+/* modal.css */
+/* modal.css */
+.price-modal{
+  font-size: large;
+}
+.product-thuy {
+  margin-top: 20px;
+}
+.quantt-modal{
+  font-size: 20px;
+}
+.flexbut {
+  justify-content: space-between;
+}
+.add-modal{
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.modal-header {
+  justify-content: flex-end !important;
+  margin-bottom: 10px;
+}
+.btn-lg {
+  font-size: 1.5em;
+  padding: 0.5em;
+}
+.archive-modal{
+  padding-top: 8px;
+  padding-bottom: 3px;
+}
+
+.mota-modal{
+  margin-top: 10px;
+  font-size: 15px;
+}
+
+.ReactModal__Content {
+  inset: 150px 200px 50px 200px !important;
+  
+}
+.mar{
+  margin-top: 20px;
+}
+.ReactModal__Overlay {
+  z-index: 9999999;
+}
+.modal-quantity {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.modal-quantity-btn {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.modal-quantity-btn button {
+  font-size: 18px;
+  padding: 5px 10px;
+  margin: 0 5px;
+}
+.modal-quantity {
+  margin-top: 10px;
+  display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.quantity-btn {
+  background-color: #f2f2f2;
+  border: none;
+  color: #333;
+  padding: 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.quantity-btn:hover {
+  background-color: #ddd;
+}
+
+
+@media screen and (max-width: 720px) {
+  .ReactModal__Content {
+    inset: 180px 20px 40px 20px!important
+  } 
+  .btn-modal {
+    font-size: 30px !important;
+  }
+  .flexbut {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 500px) {
+  .ReactModal__Content {
+    inset: 200px 10px 20px 10px !important
+  } 
+}

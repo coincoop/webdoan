@@ -1,0 +1,39 @@
+.link-base {
+  color: black;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+}
+.blogall-but {
+  margin-top: 0px;
+  display: flex;
+  align-self: start;
+  padding: 8px 20px !important;
+  font-size: 12px !important;
+}
+.blogall-but i{
+  font-size: 10px;
+}
+.blogall {
+  padding-top: 20px;
+}
+.blog-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.article-card__image.media {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.article-card__image.media img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+

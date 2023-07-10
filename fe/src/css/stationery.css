@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+/* * {
+    margin: 0;
+    padding: 0;  
+} */
+
+.banner-singer{
+    background:url(../img/img_6.png) center bottom no-repeat;
+    padding: 115px 0 122px;
+}
+
+.sub-title{
+    color: #4bc4e0;
+    text-align: center;
+}
+
+.sub-title2:hover{
+    color: #fff;
+}
+
+.sub-title2{
+    text-align: center;
+}
+
+.shopify-section{
+    margin: 0;
+    padding: 0 !important;
+   
+}
+@media(max-width:767px){
+    #shopify-section{
+        margin: 20px 0px 0px 0px;
+    }
+}
+.banner-singer-box{
+    position: relative;
+    background-size: cover!important;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+.banner-singer .title-block {
+    margin-bottom: 10px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.25;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+ .leofa-arrow-right::before {
+    content: \f061;
+ }
+ .leofar {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    font-family: "Font Awesome 5 Pro";
+}
+.link-base {
+    text-align: center;
+    letter-spacing: 0.5px;
+    text-transform: capitalize;
+    transition: all 0.3s;
+    padding: 15px 30px;
+    display: inline-block;
+    border-radius: 50px;
+    border: 2px solid #fff;
+    color: #fff;
+    margin-top: 40px;
+    font-style: normal;
+    width: max-content;
+    z-index: 2;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.8;
+    text-decoration: none;
+    
+}
+element.style {
+    color: #ffffff;
+    background-color: #e84f69;
+    border: 1px solid #e84f69;
+    padding: 13px 25px;
+    text-align: center;
+}
+body {
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-columns: 100%;
+    min-height: 100%;
+    margin: 0;
+    font-size: 1.4rem;
+    letter-spacing: 0rem;
+    line-height: 1.8;
+   
+    font-weight: 400;
+}
+
+.banner-singer .sub-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: .3em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+@media screen and (min-width: 390px){
+    .banner-singer .title-block {
+        font-size: 30px;
+    }
+}

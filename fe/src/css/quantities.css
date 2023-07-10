@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+
+
+  
+#shopify-section-template--15969007501564__16519192395c336615 {
+      
+    margin: 80px 0 0 0;
+  
+  
+  
+}
+
+.backgr{
+    background: "url(../../../img/Mask_Groupa.png)  center no-repeat";
+    padding: "50px 0 350px";
+}
+
+@media(max-width: 767px){
+  #shopify-section-template--15969007501564__16519192395c336615 {
+    
+      margin: 40px 0px 0px 0px;
+    
+    
+  }
+}
+
+.banner-singer-content {
+    background: url(../img/stationery.png) center bottom no-repeat;
+}
+.banner-singer-box {
+    position: relative;
+    background-size: cover !important;
+}
+.banner-singer1 .img-under img {
+    max-width: 100%;
+    height: auto;
+   display: -moz-marker;
+}
+.banner-singer1 .title-block {
+    margin-bottom: 10px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.25;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+}
+.banner-singer1 .sub-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.banner-singer1 {
+    background: url(../img/Mask_Groupa.png) center bottom no-repeat;
+    padding: 50px 0 350px;
+}
+
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+img, svg {
+    vertical-align: middle;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.p {
+    color: #ffffff;
+}
+.banner-singer p {
+    font-style: normal;
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 1.5;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.link-base {
+    letter-spacing: 0.5px;
+    text-transform: capitalize;
+    transition: all 0.3s ease 0s;
+    padding: 15px 30px;
+    display: inline-block;
+    border-radius: 50px;
+    border: 2px solid rgb(31, 31, 31);
+    color: rgb(255, 255, 255);
+    margin-top: 40px;
+    font-style: normal;
+    width: max-content;
+    z-index: 2;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.8;
+}
+.link-base:hover {
+    color: #f5f5f5;
+    background-color: #e84f69;
+    
+}
+.js-countdown.js-countdown--countdown--1 {
+    display: flex;
+    flex-wrap: wrap;
+}
+.link-center {
+    margin-left: auto;
+    margin-right: auto;
+}
+.title-block {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 45px;
+    text-transform: capitalize;
+}
+.row > * {
+    --bs-gutter-x: 30px;
+}
+
+@media(max-width: 767px){
+    .row > * {
+        --bs-gutter-x: 10px;
+    }
+  }
+.fa-solid {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    font-family: "Font Awesome 6 Pro";
+}
+.banner-singer-box{
+    position: relative;
+    background-size: cover!important;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+.label-time{
+    display: inline;
+    color: #ffffff;
+}
+.js-countdown.js-countdown--countdown--1 > div {
+    font-size: 12px;
+    background-color: transparent;
+    min-width: 50px;
+    padding: 0px;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+}
+.js-countdown.js-countdown--countdown--1 span.label-dots {
+    color: #fff;
+    padding: 0px 15px;
+    font-size: 30px;
+}
+.js-countdown.js-countdown--countdown--1 .label-time {
+    font-style: normal;
+    font-weight: 550;
+    font-size: 42px;
+    line-height: 1.1;
+    text-transform: capitalize;
+}
+.banner-singer .img-under {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-10%);
+    left: 0;
+    text-align: center;
+}
+@media screen and (min-width: 390px){
+    .banner-singer .sub-title {
+        font-size: 8px;
+    }
+}
+@media screen and (min-width: 390px){
+    .banner-singer .title-block {
+        font-size: 30px;
+    }
+}
+@media screen and (min-width: 390px){
+    .banner-singer .p {
+        font-size: 13px;
+    }
+}
+@media screen and (min-width: 390px){
+    .link-base {
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 361px){
+    .label-time{
+        font-size: 30px !important;
+    }
+}

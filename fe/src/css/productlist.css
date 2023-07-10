@@ -1,0 +1,45 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    /* font-family: Moderat; */
+}
+.prolist {
+    margin-top: 50px;
+}
+.product{
+    padding:30px;
+}
+
+.product-item{
+    padding:10px;
+}
+
+.icons{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.showmore{
+    width: 120px;
+    height: 40px;
+    border-radius: 50px;
+    border: 0.1rem solid #000;
+    margin-top: 10px;
+}
+
+.showmore:hover{
+    color: #fff !important;
+    background-color: #e84f69 !important;
+    border-color: #e84f69 !important;
+}
+
+.title-h3{
+    margin-bottom: 15px;
+}
+
+.section-text{
+    font-weight: 300;
+    color: #797979;
+    margin-bottom: 40px;
+}

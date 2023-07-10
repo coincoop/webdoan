@@ -1,0 +1,35 @@
+.payment h1 {
+    color: #333;
+    text-align: center;
+}
+
+.payment {
+    padding: 20px;
+}
+
+.payment .contain-prod {
+    max-height: 400px;
+    overflow-x: auto;
+    width: 70%;
+    margin: 0 auto ;
+    border: 1px solid #333;
+}
+
+.payment .contain-prod .table-prod {
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+}
+
+.payment .table-prod img{
+    height: 50px;
+}
+
+.payment .table-prod td{
+    padding: 20px;
+}
+
+.payment .input-info{
+     width: 50%;
+    margin: 0 auto ;
+}

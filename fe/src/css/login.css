@@ -1,0 +1,245 @@
+.breadcrumbs-style_1.breadcrumb.g-breadcrumb.lazyload.text-center {
+  background-color: #f4efe9;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-family: Moderat;
+  font-size: 14px;
+  line-height: 25.2px;
+  padding: 40px 0px;
+  text-align: center;
+}
+.container-fluid {
+  font-size: 14px;
+  line-height: 25.2px;
+  padding: 0px 15px;
+  text-align: center;
+}
+.g-breadcrumb {
+  flex-direction: column;
+  color: #000000;
+  padding: 40px 0;
+  margin: 0;
+  background: #b69369;
+}
+.g-breadcrumb a,
+.g-breadcrumb span {
+  padding: 0 3px;
+  font-size: 20px;
+  line-height: 20px;
+  display: inline-block;
+  text-decoration: none;
+}
+.g-breadcrumb h1 {
+  color: #7b7b7b;
+  font-family: var(--g-font-1);
+}
+.g-breadcrumb a {
+  color: #7b7b7b;
+  border-bottom: 1px solid currentColor;
+  padding: 0;
+  margin: 5px 3px;
+}
+
+.breadcrumb .icon {
+  height: 14px;
+  vertical-align: baseline;
+  width: auto;
+}
+
+.linkhome {
+  color: #7b7b7b;
+  display: inline-block;
+  font-family: Moderat;
+  line-height: 20px;
+  margin: 5px 3px;
+  text-align: center;
+  text-transform: capitalize;
+}
+.iconhome {
+  display: inline-block;
+  line-height: 20px;
+  padding: 0px 20px;
+  text-align: center;
+  text-transform: capitalize;
+}
+.g-breadcrumb .container,
+.g-breadcrumb .container-fluid {
+  z-index: 2;
+  position: relative;
+}
+.g-breadcrumb.breadcrumbs-style_2 {
+  padding: 120px 0;
+  background: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  border-radius: 0;
+}
+@media (max-width: 576px) {
+  .g-breadcrumb.breadcrumbs-style_2 {
+    padding: 50px 0;
+  }
+  .g-breadcrumb.breadcrumbs-style_2 h3 {
+    font-size: 26px;
+  }
+}
+.g-breadcrumb.breadcrumbs-style_2::before {
+  background: rgba(0, 0, 0, 0);
+  position: absolute;
+  z-index: 1;
+  content: "";
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+}
+.br-title {
+  color: #000000;
+}
+.br-title svg {
+  width: 23px;
+  height: 23px;
+}
+.field {
+    position: relative;
+    width: 100%;
+  }
+  
+  .field label {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #444444;
+    pointer-events: none;
+    transition: all 0.3s ease;
+  }
+  
+  .field input {
+    width: 100%;
+    padding: 20px 15px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    font-size: 16px;
+    color: #444444;
+    background: transparent;
+  }
+  
+  .field input:focus + label, 
+  .field input:not(:placeholder-shown) + label {
+    top: 0;
+    font-size: 12px;
+    color: #444444;
+    transition: all 0.3s ease;
+  }
+  
+  .field input:focus::placeholder,
+  .field input:not(:placeholder-shown)::placeholder {
+    color: transparent;
+  }
+  
+  .field input:focus + label,
+  .field input:not(:placeholder-shown) + label {
+    top: 0;
+    font-size: 12px;
+    color: #444444;
+    transition: all 0.3s ease;
+  }
+  
+  .field input:focus {
+    outline: none;
+    border-bottom: 2px solid #666;
+  }
+  
+  .field a {
+    display: block;
+    margin-top: 20px;
+    color: #666;
+    text-align: right;
+    text-decoration: none;
+  }
+  
+  .field input::placeholder {
+    color: transparent;
+  }
+  
+  .field a {
+    display: block;
+    margin-top: 20px;
+    color: #4b4b4b;
+    text-align: right;
+    text-decoration: none;
+  }
+  
+  .login .field+a {
+    margin-top: 1rem;
+}
+.login a[href="#recover"] {
+    margin-left: 0;
+    margin-right: 0;
+}
+.login a {
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.underlined-link, .customer a {
+    color: rgba(var(--color-link), var(--alpha-link));
+    text-underline-offset: 0.3rem;
+    text-decoration-thickness: 0.1rem;
+    transition: text-decoration-thickness ease 100ms;
+}
+
+.link, .customer a {
+    cursor: pointer;
+    display: inline-block;
+    border: none;
+    box-shadow: none;
+    text-decoration: underline;
+    text-underline-offset: 0.3rem;
+    color: #5a5a5a;
+    background-color: transparent;
+    font-size: 1.2rem;
+    font-family: inherit;
+}
+.link, .customer a:hover {
+    
+    color: #000000;
+    
+}
+
+.customer button {
+    margin: 2rem 0 1.5rem;
+    
+}
+
+.button, .button-label, .shopify-challenge__button, .customer button {
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+    line-height: 1.2;
+}
+
+.button, .shopify-challenge__button, .customer button {
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    font: inherit;
+    padding: 0.9rem 3rem 1.1rem;
+    text-decoration: none;
+    border: 0;
+    border-radius: 0;
+    background-color: #e84f69;
+    box-shadow: 0 0 0 0.1rem #ff3658;
+    color: rgb(255, 255, 255);
+    min-width: 5rem;
+    min-height: 1rem;
+    transition: box-shadow 100ms ease;
+    -webkit-appearance: none;
+    appearance: none;
+}
+

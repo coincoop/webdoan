@@ -1,0 +1,147 @@
+.cart-thuy table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.cart-thuy th,
+td {
+  text-align: left;
+  padding: 8px;
+}
+
+.cart-thuy th {
+  background-color: #333;
+  color: white;
+}
+
+.cart-thuy tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.cart-thuy img {
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+}
+
+.cart-thuy .input-quantity input::-webkit-outer-spin-button,
+.cart-thuy .input-quantity input::-webkit-inner-spin-button {
+
+  -webkit-appearance: none;
+  margin: 0;
+
+}
+
+
+.cart-thuy .input-quantity input {
+  max-width: 70px;
+}
+
+.cart-thuy .input-quantity {
+  width: 70px;
+}
+
+.cart-thuy .thanhtien-thuy {
+  width: 70px;
+  overflow: hidden;
+  text-align: right;
+}
+
+.cart-thuy .dongia-thuy {
+  width: 50px;
+  text-align: right;
+}
+
+.table-cart-thuy {
+  overflow-x: auto;
+  overflow-y: auto;
+}
+
+/* .cart-thuy table {
+  overflow-x: scroll ;
+  display: block;
+}
+.cart-thuy table tbody{
+  display: block;
+  overflow-x: scroll ;
+} */
+
+.th-thanhtien-thuy {
+  max-width: 70px;
+}
+
+.trash-can-button {
+  border: none;
+  background: none;
+  object-fit: contain;
+
+}
+
+.trash-can-button i {
+  width: 20px;
+  height: 20px;
+}
+
+.trash-can-button i:hover {
+  color: #ff0000;
+}
+
+.xoamulti button {
+  margin-top: 20px;
+  height: 30px;
+  width: 200px;
+  border: none;
+  background-color: #e84f69;
+  border-radius: 15px;
+  color: #bdbdbd;
+}
+
+.card {
+  height: 60vh;
+  margin: 25px;
+  padding: 25px;
+}
+
+.centercart a {
+  color: aliceblue;
+  text-decoration: none;
+}
+
+.centercart img {
+  text-decoration: none;
+  color: inherit;
+  border: none;
+  outline: none;
+  height: 162px;
+  width: 250px;
+  margin: 20px 0px
+}
+
+h4,
+h6 {
+  font-weight: 400;
+}
+
+.centercart {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .centercart {
+
+    top: 70%;
+
+  }
+  .card {
+    height: 70vh;
+  }
+}
+
+.btn-thanhtoan{
+  text-decoration: none;
+  
+}

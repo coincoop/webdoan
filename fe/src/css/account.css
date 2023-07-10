@@ -1,0 +1,191 @@
+.info-user{
+    background-color: #f5f5f5;
+}
+
+.info-user .profile-container {
+    display: flex;
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+.info-user .sidebar {
+    background-color: #ffffff;
+    width: 200px;
+    padding: 20px;
+    
+}
+
+.info-user .logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.info-user .logo img {
+    width: 100px;
+    height: auto;
+}
+
+.info-user .sidebar-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+   
+}
+
+.info-user .menu-item {
+    margin-bottom: 10px;
+}
+
+.info-user .menu-link {
+    display: flex;
+    align-items: center;
+    color: #000000;
+    text-decoration: none;
+}
+
+.info-user .menu-link:hover {
+    color: #ff0000;
+}
+
+.info-user .menu-link .menu-text {
+    margin-left: 10px;
+}
+
+.info-user .profile-main {
+    flex: 1;
+    margin-left: 20px;
+
+}
+
+.info-user .profile-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.info-user .profile-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.info-user .profile-body {
+    background-color: #ffffff;
+    padding: 20px;
+    min-height: 385px;
+}
+
+.info-user .profile-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.info-user .profile-image {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.info-user .profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.info-user .profile-details {
+    margin-left: 20px;
+}
+
+.info-user .profile-name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.info-user .profile-email,
+.info-user .profile-phone,
+.info-user .profile-address {
+    margin-bottom: 5px;
+}
+
+.info-user .edit-profile-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid #000000;
+    border-radius: 5px;
+}
+
+.info-user .edit-profile-link:hover {
+    background-color: #e0e0e0;
+}
+
+.info-user .nav-pills li{
+    padding: 10px;
+}
+
+.info-user table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .info-user th,
+  td {
+    text-align: left;
+    padding: 8px;
+  }
+  
+  .info-user th {
+    background-color: #333;
+    color: white;
+  }
+  
+  .info-user tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .info-user img {
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+  }
+  
+  .info-user .input-quantity input{
+    max-width: 70px;
+  }
+  .info-user .input-quantity{
+    width: 70px;
+  }
+  
+  .info-user .thanhtien-thuy{
+    width: 70px;
+    overflow: hidden;
+    text-align: right;
+  }
+  
+  .info-user .dongia-thuy{
+    width: 50px;
+    text-align: right;
+  }
+  
+  .table-cart-thuy{
+    max-height: 500px;
+    overflow-y: auto;
+    overflow-x: auto;
+  }
+  
+  /* .cart-thuy table {
+    overflow-x: scroll ;
+    display: block;
+  }
+  .cart-thuy table tbody{
+    display: block;
+    overflow-x: scroll ;
+  } */
+  
+  .th-thanhtien-thuy{
+    max-width: 70px;
+  }
