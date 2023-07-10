@@ -23,6 +23,7 @@ import Dashboard from "./Dashboard";
 import ListHoadon from "./ListHoadon";
 import ListCTHD from "./ListCTHD";
 import { Helmet } from "react-helmet";
+import { useNavigate } from "react-router";
 
 const { Header, Content, Footer, Sider } = Layout;
 const AdLayout = () => {
@@ -30,11 +31,14 @@ const AdLayout = () => {
     token: { colorBgContainer },
   } = theme.useToken();
   const [selectedMenuItem, setSelectedMenuItem] = useState("1"); // 1 là key của item "Product" trong menu
-
+  const navigate = useNavigate();
   const handleMenuClick = (menuItem) => {
-    setSelectedMenuItem(menuItem.key);
-  };
-
+    if (menuItem.key === "home") {
+      navigate('/')
+    } else {
+      setSelectedMenuItem(menuItem.key);
+    }
+  }
   return (
     <Layout>
       <Helmet>
@@ -83,6 +87,7 @@ const AdLayout = () => {
             onClick={handleMenuClick}
             selectedKeys={[selectedMenuItem]}
             items={[
+              { key: "home", label: "Trang chủ" },
               { key: "1", label: "Tổng quan" },
               { key: "2", label: "Sản phẩm" },
               { key: "3", label: "Menu" },
