@@ -114,30 +114,30 @@ export default function Header() {
   };
 
   const checkTokenExpiration = (accessToken) => {
-  try {
+    try {
 
-    const decodedToken = jwt_decode(accessToken);
+      const decodedToken = jwt_decode(accessToken);
 
-  
-    const expirationTime = decodedToken.exp;
 
-   
-    const currentTime = Math.floor(Date.now() / 1000);
+      const expirationTime = decodedToken.exp;
 
- 
-    if (expirationTime < currentTime) {
-      console.log('Access token hết hạn');
-       logoutUser(dispatch, makh, navigate, accessToken);
-    } else {
-      console.log('Access token còn hiệu lực');
-      
+
+      const currentTime = Math.floor(Date.now() / 1000);
+
+
+      if (expirationTime < currentTime) {
+        console.log('Access token hết hạn');
+        logoutUser(dispatch, makh, navigate, accessToken);
+      } else {
+        console.log('Access token còn hiệu lực');
+
+      }
+    } catch (error) {
+      console.error('Lỗi khi giải mã access token:', error);
+
     }
-  } catch (error) {
-    console.error('Lỗi khi giải mã access token:', error);
-    
-  }
-};
- 
+  };
+
 
   useEffect(() => {
     getTotalUser();
@@ -174,15 +174,15 @@ export default function Header() {
   //cập nhật không khuyến khích dùng
 
   useEffect(() => {
-    if(user != null){
-       // Gọi getUserCart mỗi khi dữ liệu trong cơ sở dữ liệu thay đổi
-    const interval = setInterval(() => {
-      getUserCart();
-    }, 3000); // Khoảng thời gian để kiểm tra cập nhật (ví dụ: 1 giây)
+    if (user != null) {
+      // Gọi getUserCart mỗi khi dữ liệu trong cơ sở dữ liệu thay đổi
+      const interval = setInterval(() => {
+        getUserCart();
+      }, 3000); // Khoảng thời gian để kiểm tra cập nhật (ví dụ: 1 giây)
 
-    return () => {
-      clearInterval(interval); // Xóa interval khi component bị hủy
-    };
+      return () => {
+        clearInterval(interval); // Xóa interval khi component bị hủy
+      };
     }
 
   }, []); // Gọi getUserCart khi component được render lần đầu tiên
@@ -500,42 +500,45 @@ export default function Header() {
                           >
                             {user ? (
                               <>
-                                <li>
-                                  <Link to="/account/user">
-                                    Hi, {user.tenkh} !
-                                  </Link>
-                                </li>
-                                <li>
-                                  <Link
-                                    to="/account/logout"
-                                    onClick={handleLogout}
-                                    title="Đăng xuất"
-                                  >
-                                    Đăng xuất
-                                  </Link>
-                                </li>
+                                {user.vaitro === 1 ? (
+                                  <>
+                                    <li>
+                                      <Link to="/admin">Hi Admin, {user.tenkh}!</Link>
+                                    </li>
+                                    <li>
+                                      <Link to="/account/logout" onClick={handleLogout} title="Đăng xuất">
+                                        Đăng xuất
+                                      </Link>
+                                    </li>
+                                  </>
+                                ) : (
+                                  <>
+                                    <li>
+                                      <Link to="/account/user">Hi, {user.tenkh}!</Link>
+                                    </li>
+                                    <li>
+                                      <Link to="/account/logout" onClick={handleLogout} title="Đăng xuất">
+                                        Đăng xuất
+                                      </Link>
+                                    </li>
+                                  </>
+                                )}
                               </>
                             ) : (
                               <>
                                 <li>
-                                  <a
-                                    href={"/account/login"}
-                                    className="site-header__link"
-                                    title="Đăng nhập"
-                                  >
+                                  <a href="/account/login" className="site-header__link" title="Đăng nhập">
                                     Đăng nhập
                                   </a>
                                 </li>
                                 <li>
-                                  <a
-                                    href={"/account/register"}
-                                    title="Đăng kí"
-                                  >
+                                  <a href="/account/register" title="Đăng kí">
                                     Đăng kí
                                   </a>
                                 </li>
                               </>
                             )}
+
                             {/* <li>
                               <a href={"/pages/wishlist"} title="Wishlist">
                                 Yêu thích (
@@ -563,11 +566,18 @@ export default function Header() {
                           </ul>
                         </div>
                       </div>
+
                       {user ? (
                         <div className="header-sign-2">
-                          <p>
-                            <Link to="/account/user">HI, {user.tenkh} !</Link>
-                          </p>
+                          {user.vaitro === 1 ? (
+                            <p>
+                              <Link to="/admin">HI ADMIN, {user.tenkh}!</Link>
+                            </p>
+                          ) : (
+                            <p>
+                              <Link to="/account/user">HI, {user.tenkh}!</Link>
+                            </p>
+                          )}
                           <p>
                             <Link to="/account/logout" onClick={handleLogout}>
                               Đăng xuất
@@ -577,16 +587,13 @@ export default function Header() {
                       ) : (
                         <div className="header-sign-2">
                           <p>
-                            <a
-                              href={"/account/login"}
-                              className="site-header__link"
-                            >
+                            <a href="/account/login" className="site-header__link">
                               Đăng nhập
                             </a>
                           </p>
                           <span>/</span>
                           <p>
-                            <a href={"/account/register"} title="Register">
+                            <a href="/account/register" title="Register">
                               Đăng kí
                             </a>
                           </p>
@@ -608,6 +615,7 @@ export default function Header() {
                           </a>
                         </p>
                       </div> */}
+
                       <div className="header-wishlist">
                         <a className="btn-wishlist" href={"/pages/wishlist"}>
                           <i className="fa-regular fa-heart fa-xl"></i>
@@ -750,8 +758,8 @@ export default function Header() {
                               {childSubmenus.length > 0 && (
                                 <div
                                   className={`submenucon ${subMenuActive?.[parentIndex]?.[submenu.id]
-                                      ? "active"
-                                      : ""
+                                    ? "active"
+                                    : ""
                                     }`}
                                 >
                                   <div className="submenucon__row">
